@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onclick</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+   
+</head>
+
+<body>
+    <!--Se usa parte de una estructura de pagina html usando semantica-->
+    <main>
+        <nav>
+            <h1 class="nav-title">Diccionary</h1>
+            <h1 class="nav-title"><input type="search" name="buscar" id="buscar"></h1>
+            <button class="btn-nav" onclick="fnCambiaNombre(this)">Login</button>
+        </nav>
+        <article class="detail">
+            <section class="detail-left">
+                <!--marco rojo-->
+                <section class="detail-content-1">
+                    <article class="detail-content">
+                        <p><b>Ninja</b></p>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <p><button class="btn-burlywood" onclick="likePracticante(this)">0 likes</button></p>
+                    </article>
+                    <article class="detail-content">
+                        <p>A Practitioner skilled in the <u>Japenese</u> art of <u>ninjutsu</u></p>
+                    </article>
+                </section>
+                <section class="detail-content-2">
+                    <article class="detail-content">
+                        <p><b>Ninja</b></p>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <p><button class="btn-burlywood"  onclick="likeProgramer(this)">0 likes</button></p>
+                    </article>
+                    <article class="detail-content">
+                        <p>A Programer who breaks down problems with <u>zen</u>-like focus</p>
+                    </article>
+                </section>
+            </section>
+            <section class="detail-right">
+                <!--marco rojo-->
+                <section class="detail-content-3">
+                        <p><b>Dojonary is defined by YOU</b></p>
+                        <br>
+                        <br>
+                        <p><button class="btn-green" onclick="this.remove()">Add Definition</button></p>
+                </section>
+                <section class="detail-content-4"></section>
+            </section>
+        </article>
+
+
+        <article>
+            <footer>//</footer>
+        </article>
+
+    </main>
+
+</body>
+
+</html>
